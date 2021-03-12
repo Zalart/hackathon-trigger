@@ -1,12 +1,28 @@
-import React from 'react'
+import React from 'react';
+import '../components/footer.css';
 
 function footer() {
     return (
-        <div>
-            <h1>footer</h1>
-            <p>footer2</p>
+        <div className='footer'>
+            <img className='footer__wcs-logo' src="https://s3-alpha-sig.figma.com/img/34aa/e319/9485bda644e4913376c8e118e3a1723f?Expires=1616371200&Signature=SAENyoOj~xqgrEcx-gOT5-IT0vgptjO9euv3AL3yXAzcrNtBdrOM60c4axgajQwfcNSvhv9p4XomFhHcPggA2PJoYe7EQoG1E3Yr7plCDbzL4rLwMIM4Yval9Bnq-JJICAohPQJi7EVuhlIOqX4~VrC9~2M8igKf-xLuJ2j5JviA33D9U2CRIftrzF7C3bdK3RTsakOfmf7qvOh67QjnKImUlHeVy8OgKHihoqrcQgNIPycJkYMxbFCf~5D1PADsy8VDbso7WLZL1jLIq2wNhNhbyZd-UbtT45DuY~zoH5~WMoR34f8g8t~Jxqrf4l8Hy2ryb8nJL~ULqpcSm4FeDA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='wild code school logo' />
+
+            <div className='footer__info'>
+                <p>Made for</p>
+                <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjYuMiIgaGVpZ2h0PSI1MCIgdmlld0JveD0iLTMxMyAzNzYgMTY2LjIgNTAiPjxnIGZpbGw9IiNGMTJFNDUiPjxwYXRoIGQ9Ik0tMTk1LjkgMzg1LjhoLTguOGMtLjIgMC0uNC4yLS40LjR2NS4xYzAgLjIuMi40LjQuNGg4LjhjLjIgMCAuNC0uMi40LS40di01LjFjLjEtLjItLjEtLjQtLjQtLjR6bS0uMSA3LjZoLTE3Yy0uMiAwLS41LjItLjYuNGwtMi4yIDguMy0uMS40LTIuNi04LjljLS4xLS4yLS4zLS40LS42LS40aC02LjZjLS4yIDAtLjUuMi0uNi40bC0yLjUgOC4zLS4xLjQtLjEtLjItMS00LjEtMS4xLTQuMWMtLjEtLjItLjMtLjQtLjYtLjRILTI0NXYtNy4yYzAtLjItLjMtLjUtLjYtLjRsLTguNCAyLjZjLS4zLjEtLjQuMi0uNC40djQuNWgtMi4yYy0uMiAwLS40LjItLjQuNHY2LjRjMCAuMi4yLjQuNC40aDIuMnY3LjhjMCA1LjUgMyA4LjEgOC41IDguMSAyLjMgMCA0LjUtLjUgNi0xLjN2LTYuNmMwLS4zLS4zLS40LS41LS40LS45LjQtMS42LjUtMi40LjUtMS41IDAtMi4zLS42LTIuMy0yLjN2LTUuN2g0LjhjLjIgMCAuNC0uMi40LS40di01LjRsNi4zIDIwLjljLjEuMi4zLjQuNi40aDdjLjIgMCAuNS0uMi42LS40bDMtOS4zIDEuNSA0LjggMS40IDQuNGMuMS4yLjMuNC42LjRoN2MuMiAwIC41LS4yLjYtLjRsNi40LTIxdjIxYzAgLjIuMi40LjQuNGg4LjVjLjIgMCAuNC0uMi40LS40di0yMS44YzAtLjMtLjItLjUtLjQtLjV6bTExLjItNy42aC04LjVjLS4yIDAtLjQuMi0uNC40djI5LjVjMCAuMi4yLjQuNC40aDguNWMuMiAwIC40LS4yLjQtLjR2LTI5LjVjMC0uMi0uMi0uNC0uNC0uNHptMTEuMyAwaC04LjhjLS4yIDAtLjQuMi0uNC40djUuMWMwIC4yLjIuNC40LjRoOC44Yy4yIDAgLjQtLjIuNC0uNHYtNS4xYy4xLS4yLS4xLS40LS40LS40em0tLjEgNy42aC04LjVjLS4yIDAtLjQuMi0uNC40djIxLjljMCAuMi4yLjQuNC40aDguNWMuMiAwIC40LS4yLjQtLjR2LTIxLjhjMC0uMy0uMi0uNS0uNC0uNXptMTQuMS0uNWMtNy41IDAtMTIuOCA1LjUtMTIuOCAxMS45di4xYzAgNi40IDUuMyAxMS44IDEyLjcgMTEuOCA3LjUgMCAxMi44LTUuNSAxMi44LTExLjl2LS4xYzAtNi40LTUuMy0xMS44LTEyLjctMTEuOHptMy42IDExLjljMCAyLjItMS41IDMuOS0zLjYgMy45cy0zLjctMS44LTMuNy00di0uMWMwLTIuMiAxLjUtMy45IDMuNi0zLjlzMy43IDEuOCAzLjcgNC4xek0tMjg4IDM3NmMtMTMuOCAwLTI1IDExLjItMjUgMjVzMTEuMiAyNSAyNSAyNSAyNS0xMS4yIDI1LTI1LTExLjItMjUtMjUtMjV6bTAgNDMuNGMtMTAuMiAwLTE4LjQtOC4yLTE4LjQtMTguNHM4LjItMTguNCAxOC40LTE4LjQgMTguNCA4LjIgMTguNCAxOC40LTguMiAxOC40LTE4LjQgMTguNHoiLz48Y2lyY2xlIGN4PSItMjgxLjgiIGN5PSIzOTQuOCIgcj0iNS4yIi8+PGNpcmNsZSBjeD0iLTI4MS44IiBjeT0iNDA3LjIiIHI9IjUuMiIvPjxjaXJjbGUgY3g9Ii0yOTQuMiIgY3k9IjQwNy4yIiByPSI1LjIiLz48Y2lyY2xlIGN4PSItMjk0LjIiIGN5PSIzOTQuOCIgcj0iNS4yIi8+PC9nPjwvc3ZnPg==' alt='Twilio logo' />
+                <p>  hackaton by .....</p>
+            </div>
+
+            <a target="_blank" href="https://github.com/LapitskayaN">Natalia<img className='footer__gitHubLogo' src=' https://png2.cleanpng.com/sh/d403e464ed47e75e910c3f07b9fac271/L0KzQYm3VsA2N51xh5H0aYP2gLBuTfZ6dqppfJ91bHOwfLFuj71ocaVtjdQ2b4LqcbBwmvF1cZDzRdN3ZILoh376gB91fF46eqMBZUW6c4m4hMc5QV82UKM6NUa4SYK8UsgzOmg2UagAM0G8PsH1h5==/kisspng-fynydd-llc-logo-github-organization-andrew-scott-5b16e57c81d789.1811565915282271965319.png' alt='github logo' /></a>
+
+            <a target="_blank" href="https://github.com/Zolotou">Vadim<img className='footer__gitHubLogo' src=' https://png2.cleanpng.com/sh/d403e464ed47e75e910c3f07b9fac271/L0KzQYm3VsA2N51xh5H0aYP2gLBuTfZ6dqppfJ91bHOwfLFuj71ocaVtjdQ2b4LqcbBwmvF1cZDzRdN3ZILoh376gB91fF46eqMBZUW6c4m4hMc5QV82UKM6NUa4SYK8UsgzOmg2UagAM0G8PsH1h5==/kisspng-fynydd-llc-logo-github-organization-andrew-scott-5b16e57c81d789.1811565915282271965319.png' alt='github logo' /></a>
+
+            <a target="_blank" href="https://github.com/zalart">Artur<img className='footer__gitHubLogo' src=' https://png2.cleanpng.com/sh/d403e464ed47e75e910c3f07b9fac271/L0KzQYm3VsA2N51xh5H0aYP2gLBuTfZ6dqppfJ91bHOwfLFuj71ocaVtjdQ2b4LqcbBwmvF1cZDzRdN3ZILoh376gB91fF46eqMBZUW6c4m4hMc5QV82UKM6NUa4SYK8UsgzOmg2UagAM0G8PsH1h5==/kisspng-fynydd-llc-logo-github-organization-andrew-scott-5b16e57c81d789.1811565915282271965319.png' alt='github logo' /></a>
+
+            <a target="_blank" href="https://github.com/FokinAlexey">Alexey<img className='footer__gitHubLogo' src=' https://png2.cleanpng.com/sh/d403e464ed47e75e910c3f07b9fac271/L0KzQYm3VsA2N51xh5H0aYP2gLBuTfZ6dqppfJ91bHOwfLFuj71ocaVtjdQ2b4LqcbBwmvF1cZDzRdN3ZILoh376gB91fF46eqMBZUW6c4m4hMc5QV82UKM6NUa4SYK8UsgzOmg2UagAM0G8PsH1h5==/kisspng-fynydd-llc-logo-github-organization-andrew-scott-5b16e57c81d789.1811565915282271965319.png' alt='github logo' /></a>
         </div>
+
     )
 }
+
 
 export default footer

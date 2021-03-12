@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ccc;
+    align-items: center;
+}
+.footer img{
+    padding: 0 20px;
+}
+
+
+
+.footer__wcs-logo{
+width: 82px;
+height: 41px;
+padding: 0 20px;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: row;
+}
+/* .footer__info img{
+    padding: 20px;
+    align-items: center;
+} */
+
+.footer__info p{
+    color: red;
+}
+
+.footer__gitHubLogo{
+    width: 25px;
+    height: 25px;;
+}
+.footer__gitHubLogo:hover{
+    transform: rotate(1080deg);
+    transition: 3s ease;
+}

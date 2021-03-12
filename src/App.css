@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,35 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.welcome_pic {
+  background-image: url(https://c.pxhere.com/photos/6b/f0/grey_antique_letter_texture_grunge_typography_vintage_background_abstract-976206.jpg!d) ;
+  height: 400px; 
+
+ 
+}
+.welcome_pic p{
+  
+  text-align: center;
+  font: 48pt robota; 
+  font-weight: 500; 
+}
+
+.welcome_but {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.colortext {
+  color: #E90538; 
+}
+
+.welcome_text p{
+  margin-left: 10px;
+  font: 20pt robota;  
 }
