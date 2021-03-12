@@ -1,15 +1,7 @@
 import React, { useState } from 'react'
 import LeftSide from "../components/leftSide";
-import recieverInput from "../components/recieverInput"
+import firstStep from "../components/trigger/firstStep";
 
-const firstStep = () =>{
-    return(
-        <div>
-            <recieverInput />
-            <button>Add more</button>
-        </div>
-    )
-}
 
 const secondStep = () =>{
     return(

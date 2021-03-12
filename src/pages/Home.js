@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import LeftSide from "../components/leftSide";
-import triggerCard from "../components/triggerCard";
+import triggerCard from "../components/trigger/triggerCard";
 
 
 function Home() {

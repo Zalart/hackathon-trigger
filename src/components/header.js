@@ -1,9 +1,10 @@
 import React from 'react'
+import '../components/header.css';
 
 function header() {
     return (
-        <div>
-            <h1>тут будет header, вероятно </h1>
+        <div className="header">
+            <p>тут будет header, вероятно </p>
         </div>
     )
 }

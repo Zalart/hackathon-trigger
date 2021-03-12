@@ -1,19 +1,17 @@
 .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #ccc;
+    justify-content: space-between;
+    background-color: #A8A6A6;
     align-items: center;
 }
 .footer img{
     padding: 0 20px;
 }
 
-
-
 .footer__wcs-logo{
-width: 82px;
-height: 41px;
+width: 160px;
+height: 80px;
 padding: 0 20px;
 }
 
@@ -21,10 +19,6 @@ padding: 0 20px;
     display: flex;
     flex-direction: row;
 }
-/* .footer__info img{
-    padding: 20px;
-    align-items: center;
-} */
 
 .footer__info p{
     color: red;
@@ -35,6 +29,52 @@ padding: 0 20px;
     height: 25px;;
 }
 .footer__gitHubLogo:hover{
-    transform: rotate(1080deg);
+    transform: rotate(720deg);
     transition: 3s ease;
 }
+.footer__github-links{
+    display: flex;
+    margin-right: 20px;
+}
+.footer__github-links img{
+    padding: 0 5px;
+}
+.footer__github-links a{
+    text-decoration: none;
+    color: red;
+    margin: 0 5px;
+}
+
+@media (max-width: 1024px) {
+    .footer__info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__info p{
+        margin: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__info{
+        flex-direction: row;
+        margin:25px 0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer__info{
+        flex-direction: column;
+    }
+    /* .footer__github-links{
+    flex-wrap: wrap;
+    place-items: center;
+} */
+}
+
+

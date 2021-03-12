@@ -6,17 +6,19 @@ function Welcome() {
     return (
         <div className="welcome_page">
             <div className="welcome_pic">
-                <p>
-                    Some things should 
-                </p>
-                <p>  
-                    be definetely 
-                        <span class="colortext"> 
-                            DONE
-                        </span>
-                </p>
+                <div>
+                    <p>
+                        Some things should 
+                    </p>
+                    <p>  
+                        be definetely 
+                            <span class="colortext"> 
+                                DONE
+                            </span>
+                    </p>
+                </div>
                 <div className="welcome_but">
-                    <Button variant="contained" color="secondary" >
+                    <Button className="button" variant="contained" color="secondary" >
                         <Link to="/registration">Registration</Link>
                     </Button>
                 </div>
