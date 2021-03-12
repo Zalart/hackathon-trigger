@@ -11,7 +11,12 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-
+      <Switch>
+        <Route exact path="/" render={(props) => <Welcome {...props} />} />
+        <Route exact path="/home" render={(props) => <Home {...props} />} />
+        <Route exact path="/registration" render={(props) => <Registration {...props} />} />
+        <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
+      </Switch>
       <Footer />
     </BrowserRouter>
 

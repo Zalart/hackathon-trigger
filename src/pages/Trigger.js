@@ -1,11 +1,11 @@
 import React from 'react'
 
-function header() {
+function Trigger() {
     return (
         <div>
-
+            
         </div>
     )
 }
 
-export default header
+export default Trigger
