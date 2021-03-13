@@ -121,7 +121,6 @@ function Login() {
                     </form>
                 </div>
             </Container>
-            <Link to="/home">To Home page</Link>
         </div>
     )
 }

@@ -6,74 +6,61 @@ import '../pages/Welcome.css';
 function Welcome() {
     return (
         <div className="welcome_page">
-           
+
             <div className="welcome_pic">
-                <div>
-                           
-                    <p>
-                        Some things should
+                <p>
+                    Some things should
                     </p>
-                    <p>
-                        be definetely
+                <p>
+                    be definetely
                             <span className="colortext">
-                            DONE
+                        DONE
                             </span>
-                    </p>
-                </div>
+                </p>
                 <div className="welcome_but">
-<<<<<<< HEAD
-                    <Button className="button" variant="contained" color="secondary" >
-                        <Link to="/login">Login</Link>
-=======
-                   
+
                     {/* 
                     <Button  variant="contained" color="secondary">
                         <Link to="/registration">Registration</Link>
                     </Button> */}
-                                      
+
                     <Button id="but-red"  >
-                        <Link to="/registration">Registration</Link>
+                        <Link to="/signup">Registration</Link>
                     </Button>
                     <Button id="but-red"  >
-                    Registration
->>>>>>> origin/mastercopy
+                        <Link to="/login">Login</Link>
                     </Button>
                     {/* <Button id="botr" >
                         <Link to="/registration">Registration</Link>
                     </Button>  */}
-
-
                 </div>
-            </div>
 
+            </div>
 
             <div className="welcome_text">
                 <p>
-                    <span class="colortext"> 
-                         A Simple Act
+                    <span class="colortext">
+                        A Simple Act
                     </span>
-                    </p> 
+                </p>
                 <b>that will change your life</b>
-                
-                <p>  
-                    Simple and powerful. Everything you need to start is available free on this website
-                </p> 
+
                 <p>
-                    <span className="colortext"> Sometimes  </span>
+                    Simple and powerful. Everything you need to start is available free on this website
+                </p>
+                <p>
+                    <span className="colortext"> Sometimes</span>
                      we need someone to act in our favor.
                 </p>
-<<<<<<< HEAD
-                <p>You can ask your friend, relative, or collegue.</p>
-                 <p> What happens if they forget to do somethingreally important? You never know...</p>
-                                    <p>We’ll make sure that somthing will be done on time trigger, event or periodically</p>
-=======
-                <h3> You can ask your friend, relative, or collegue.</h3>
-                <p>  What happens if they forget to do something really important? You never know... We’ll make sure that somthing will be done on time trigger, event or  periodically</p>
->>>>>>> origin/mastercopy
+
+                <h3>You can ask your friend, relative, or collegue.</h3>
+                <p> What happens if they forget to do something really important? You never know... We’ll make sure that something will be done on time trigger, event or periodically</p>
+
             </div>
-                    
-                            </div>
-    )
+        </div>
+
+
+    );
 }
 
-export default Welcome
+export default Welcome;                                                
