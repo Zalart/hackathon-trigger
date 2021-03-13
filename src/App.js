@@ -4,7 +4,10 @@ import Footer from "./components/footer.js";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
+import Login from "./pages/Login.js";
+import Signup from "./pages/Signup.js";
 import Trigger from "./pages/Trigger";
+
 import Registration from "./pages/Registration";
 import { TriggerProvider } from "./TriggerContext";
 
@@ -18,7 +21,8 @@ function App() {
             <Switch>
               <Route exact path="/" render={(props) => <Welcome {...props} />} />
               <Route exact path="/home" render={(props) => <Home {...props} />} />
-              <Route exact path="/registration" render={(props) => <Registration {...props} />} />
+              <Route exact path="/login" render={(props) => <Login {...props} />} />
+              <Route exact path="/signup" render={(props) => <Signup {...props} />} />
               <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
             </Switch>
           </div>
