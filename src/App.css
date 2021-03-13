@@ -99,11 +99,23 @@
 
 
 
-        * {
-          margin: 0;
-          padding: 0;
-        }
+* {
+   margin: 0;
+   padding: 0;
+}
+.content {
+  min-height: calc(100vh - 80px);
+}
+@media (max-width: 1024px) {
+  .content {
+    min-height: calc(100vh - 122px);
+  }
+}
+
+@media (max-width: 768px) {
         .content {
-          min-height: calc(100vh - 80px);
-        }
+    min-height: calc(100vh - 210px);
+  }  
+}
+
         

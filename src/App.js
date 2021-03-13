@@ -25,6 +25,7 @@ function App() {
               <Route exact path="/signup" render={(props) => <Signup {...props} />} />
               <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
             </Switch>
+            
           </div>
           <div className="footer_wrapper">
             <Footer />

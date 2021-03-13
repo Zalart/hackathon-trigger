@@ -1,26 +1,41 @@
 
 .welcome_pic {
   background-image: url(https://c.pxhere.com/photos/6b/f0/grey_antique_letter_texture_grunge_typography_vintage_background_abstract-976206.jpg!d) ;
+  
+   /* 'https://www.tv21.ru/sites/default/files/styles/750x422/public/news/2021/01/06/abstract-5719221_1920.jpg?h=8abcec71&itok=nnSbXRDU' */
   height: 400px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+  background-size: 100%; 
  
 }
 .welcome_pic p{
   padding: 10pt;
   text-align: center;
-  font: 48pt robota; 
+  font: 36pt robota; 
   font-weight: 600; 
 
 }
+.logo {
+  text-align: center;
+ 
+}
+.logo img {
+  width:300px; /* you can use % */
+  height: auto;
+}
 
-  .welcome_but {
+  .welcome_but {  
   text-align: center;
   padding-top: 20pt;
+  display: flex;
+  justify-content: center;
  } 
-
+ .welcome_but div {
+  margin-left: 10pt;
+ }
+ 
 .colortext {
   color: #E90538; 
   font-weight: 600; 
@@ -31,8 +46,9 @@
   max-width: 1200px;
   margin-left: 20%;
   margin-right: 20%;
-  font: 20pt robota;  
-  font-weight: 400; 
+  font: 18pt robota;  
+  font-weight: 400;
+  border-bottom: #e90536; 
   
 }
 
@@ -164,16 +180,25 @@
     }
     #but-red  a{
       font-size: 12pt; 
-}
+  }
 
-
-#but-white {
+  #but-white {
       width: 50%; 
       height: 50%; 
   }
   #but-white a{
     font-size: 12pt; 
-}
+    
+  }
+  .logo img {
+    width:150px; /* you can use % */
+    height: auto;
+  }
+  .welcome_but {
+   
+    flex-direction: column
+   } 
+  
 }
 
 

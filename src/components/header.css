@@ -1,13 +1,13 @@
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #E90538;
     align-items: center;
     /* height: 30px; */
 }
 
 .header-item {
-   
+    margin: 10px 30px;
     font-size: 24px;
     line-height: 21px;
     font-family: Roboto, Arial, sans-serif;
@@ -50,8 +50,15 @@
 }
 
 
+@media (max-width: 570px) {
+    .trigger2{
+        display: none;
+   }
+}
+
 @media (max-width: 360px) {
     .header-item {
         padding: 10px 20px;
+        margin: 0;
    }
 }

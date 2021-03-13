@@ -19,10 +19,12 @@ padding: 0 20px;
     align-items: center;
 }
 .footer__info p{
-    color: red;
+    color: black;
+    font-family: Roboto;
+    font-size: 18px;
 }
 .footer__gitHubLogo{
-    width: 25px;
+    /* width: 25px; */
     height: 25px;;
 }
 .footer__gitHubLogo:hover{
@@ -37,6 +39,8 @@ padding: 0 20px;
     padding: 0 5px;
 }
 .footer__github-links a{
+    font-family: Roboto;
+    font-size: 18px;
     text-decoration: none;
     color: red;
     margin: 0 5px;

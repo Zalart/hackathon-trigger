@@ -58,13 +58,12 @@ function Login() {
     };
     const { errors, loading } = state;
     return (
-        <div>
-            <h1>It's a Login page</h1>
+        <div>          
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
                 <div>
                     <Typography component="h1" variant="h5">
-                        Login
+                        <h1>Log in</h1>
 					</Typography>
                     <form noValidate>
                         <TextField
@@ -95,7 +94,7 @@ function Login() {
                             error={errors.password ? true : false}
                             onChange={handleChange}
                         />
-                        <Button
+                        <Button id="but-red" 
                             type="submit"
                             fullWidth
                             variant="contained"
@@ -121,7 +120,7 @@ function Login() {
                     </form>
                 </div>
             </Container>
-            <Link to="/home">To Home page</Link>
+            {/* <Link to="/home">To Home page</Link> */}
         </div>
     )
 }

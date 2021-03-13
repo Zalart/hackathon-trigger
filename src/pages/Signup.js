@@ -87,7 +87,7 @@ function Signup() {
             <CssBaseline />
             <div>
                 <Typography component="h1" variant="h5">
-                    Sign up
+                    <h1>Sign up</h1>
 					</Typography>
                 <form noValidate>
                     <Grid container spacing={2}>
@@ -210,7 +210,7 @@ function Signup() {
                             />
                         </Grid>
                     </Grid>
-                    <Button
+                    <Button id="but-red" 
                         type="submit"
                         fullWidth
                         variant="contained"
