@@ -22,7 +22,7 @@ function Registration() {
                 </div>
                 <div className="welcome_but">                         
                    
-                <Button id="but-test"  >                     
+                <Button id="but-red"  >                     
                      Log in
                  </Button>
                
@@ -36,7 +36,9 @@ function Registration() {
             </div>
             <div className="welcome_text">
                 {/* <h1>It's a registration page</h1>               */}
-                <h3>Not registered on our site yet?
+                <h3>
+                    <br></br>
+                    Not registered on our site yet?
                 </h3>
                 <p>
                 Then quickly click on the registration button to get started soon  
