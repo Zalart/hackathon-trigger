@@ -165,3 +165,118 @@
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
 [debug] [2021-03-13T02:04:28.473Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
 [debug] [2021-03-13T02:04:28.474Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:22:38.833Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:22:38.834Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:22:38.834Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:22:38.834Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:22:38.835Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:38.835Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:22:38.836Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:22:38.842Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:22:38.843Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:22:38.844Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:38.851Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:22:38.852Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:22:38.871Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:22:38.876Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:22:38.877Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:22:38.878Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:22:41.123Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:22:41.124Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:22:41.124Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:22:41.124Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:22:41.125Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:41.125Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:22:41.126Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:22:41.128Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:22:41.128Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:22:41.129Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:41.132Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:22:41.133Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:22:41.139Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:22:41.146Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:22:41.148Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:22:41.149Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:22:46.388Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:22:46.388Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:22:46.388Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:22:46.389Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:22:46.389Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:46.390Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:22:46.391Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:22:46.392Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:22:46.392Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:22:46.393Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:46.395Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:22:46.396Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:22:46.408Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:22:46.409Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:22:46.410Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:22:46.410Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:22:51.586Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:22:51.586Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:22:51.587Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:22:51.587Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:22:51.587Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:51.588Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:22:51.591Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:22:51.593Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:22:51.593Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:22:51.593Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:22:51.597Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:22:51.598Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:22:51.615Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:22:51.616Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[warn] ⚠  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[info] >  [t [Error]: Password should be at least 6 characters] { {"user":"[t [Error]: Password should be at least 6 characters] {","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m [t [Error]: Password should be at least 6 characters] {"}}
+[info] >    code: 'auth/weak-password', {"user":"  code: 'auth/weak-password',","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m   code: 'auth/weak-password',"}}
+[info] >    a: null {"user":"  a: null","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m   a: null"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"\u001b[90m> \u001b[39m }"}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:22:52.809Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:22:52.810Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:23:54.197Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:23:54.197Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:23:54.198Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:23:54.198Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:23:54.199Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:23:54.199Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:23:54.200Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:23:54.201Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:23:54.202Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:23:54.204Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:23:54.207Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:23:54.207Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:23:54.224Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:23:54.225Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:23:54.225Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:23:54.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2021-03-13T02:24:28.882Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2021-03-13T02:24:28.883Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2021-03-13T02:24:28.883Z] Accepted request POST /trigger-app-c28b9/us-central1/api/signup --> api
+[debug] [2021-03-13T02:24:28.883Z] [worker-pool] submitWork(triggerId=api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=api)"}}
+[debug] [2021-03-13T02:24:28.884Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: Assigning socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:24:28.884Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: BUSY"}}
+[debug] [2021-03-13T02:24:28.885Z] [runtime-status] [70617] Trigger "api" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Trigger \"api\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Beginning execution of \"api\""}}
+[debug] [2021-03-13T02:24:28.888Z] [runtime-status] [70617] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] triggerDefinition {\"httpsTrigger\":{},\"name\":\"api\",\"entryPoint\":\"api\"}"}}
+[debug] [2021-03-13T02:24:28.889Z] [runtime-status] [70617] Running api in mode HTTPS {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Running api in mode HTTPS"}}
+[debug] [2021-03-13T02:24:28.893Z] [runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Attempting to listen to socketPath: /tmp/fire_emu_70617.sock"}}
+[debug] [2021-03-13T02:24:28.895Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2021-03-13T02:24:28.895Z] [functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/trigger-app-c28b9/us-central1/api/signup, mapping to path=/signup"}}
+[debug] [2021-03-13T02:24:28.908Z] [runtime-status] [70617] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server handling POST request"}}
+[debug] [2021-03-13T02:24:28.909Z] [runtime-status] [70617] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"[runtime-status] [70617] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"api"},"message":"Finished \"api\" in ~1s"}}
+[debug] [2021-03-13T02:24:29.845Z] [worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-api-3066c0bc-0463-4f5d-84f4-f851e90e7c7a]: IDLE"}}
+[debug] [2021-03-13T02:24:29.846Z] [work-queue] {"queueLength":0,"workRunningCount":0}
