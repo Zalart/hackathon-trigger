@@ -58,11 +58,12 @@ function FirstStep() {
             
             
             <div>
-               
-                <Button id="but-red"  >
-                    <Link to="/home">Go Back</Link>
-                </Button>
-                <Button id="but-red" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
+               <Link to="/home">
+                   <Button id="but-red" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
+                       Go Back
+                   </Button>
+               </Link>
+                <Button id="but-white" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
                     Next step
                 </Button>
             </div>
@@ -71,4 +72,4 @@ function FirstStep() {
     )
 }
 
-export default FirstStep
+export default FirstStep;

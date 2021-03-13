@@ -33,7 +33,7 @@ function ThirdStep() {
                     label="Trigger Time"
                     type="datetime-local"
                     onChange={(event) => ChangeDate(event.target.value)}
-                    defaultValue={state.form.data}
+                    defaultValue={state.form.data.toLocaleDateString()}
                     className={"classes.textField"}
                     InputLabelProps={{
                         shrink: true,

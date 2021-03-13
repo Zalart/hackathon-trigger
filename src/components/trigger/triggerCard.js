@@ -10,4 +10,4 @@ function TriggerCard({value, data}) {
     )
 }
 
-export default TriggerCard
+export default TriggerCard;
