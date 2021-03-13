@@ -9,7 +9,7 @@ function header() {
                 <img className='trigger2' src={trigger2} alt='trigger logo' />
             </a>
             <div className="header">
-            <a className="header-item" href='/home'>
+            <a className="header-item" href='/'>
                 Home
             </a>
             <a className="header-item" href='/trigger'>
