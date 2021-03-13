@@ -7,11 +7,17 @@ import Home from "./pages/Home";
 import Login from "./pages/Login.js";
 import Signup from "./pages/Signup.js";
 import Trigger from "./pages/Trigger";
+<<<<<<< HEAD
+=======
+import Registration from "./pages/Registration";
+import { TriggerProvider } from "./pages/TriggerContext"
+>>>>>>> origin/mastercopy
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+<<<<<<< HEAD
         <Header />
         <Switch>
           <Route exact path="/" render={(props) => <Welcome {...props} />} />
@@ -21,6 +27,22 @@ function App() {
           <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
         </Switch>
         <Footer />
+=======
+        <TriggerProvider>
+          <div className="content">
+            <Header />
+            <Switch>
+              <Route exact path="/" render={(props) => <Welcome {...props} />} />
+              <Route exact path="/home" render={(props) => <Home {...props} />} />
+              <Route exact path="/registration" render={(props) => <Registration {...props} />} />
+              <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
+            </Switch>
+          </div>
+          <div className="footer">
+            <Footer />
+          </div>
+        </TriggerProvider>
+>>>>>>> origin/mastercopy
       </BrowserRouter>
     </div>
   );

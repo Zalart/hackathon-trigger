@@ -1,24 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import LeftSide from "../components/leftSide";
 import firstStep from "../components/trigger/firstStep";
+import secondStep from "../components/trigger/secondStep";
+import { useTrigger } from "./TriggerContext";
 
 
-const secondStep = () =>{
-    return(
-        <div>
 
-        </div>
-    )
-}
 
 function Trigger() {
-    const [progress, SetProgress] = useState(0);
+    const prog = useTrigger();
     return (
         <div>
             <LeftSide />
             <div className="FieldTriggers">
-                <h1>{progress === 0}</h1>
-                {progress === 0 ? firstStep : secondStep}
+                <h1>{prog}</h1>
+                {prog == 0 ? firstStep : secondStep}
             </div>
         </div>
     )
