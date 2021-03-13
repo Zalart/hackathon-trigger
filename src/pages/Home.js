@@ -134,23 +134,34 @@ function Home(props) {
                 console.log(history);
                 if (!cleanupFunction) setState({
                     ...state,
-                    firstName: result.userCredentials.firstName,
-                    lastName: result.userCredentials.lastName,
-                    email: result.userCredentials.email,
-                    phoneNumber: result.userCredentials.phoneNumber,
-                    country: result.userCredentials.country,
-                    username: result.userCredentials.username,
+                    firstName: localStorage.getItem('firstName'),
+                    lastName: localStorage.getItem('lastName'),
+                    email: localStorage.getItem('email'),
+                    phoneNumber: localStorage.getItem('phoneNumber'),
+                    country: localStorage.getItem('country'),
+                    username: localStorage.getItem('username'),
                     uiLoading: false,
                     //profilePicture: response.data.userCredentials.imageUrl
                 })
                 // непосредственное обновление состояния при условии, что компонент не размонтирован
 
             } catch (error) {
-                if (error.response.status === 403) {
+                /* if (error.response.status === 403) {
                     history.push('/login');
-                }
-                console.log(error.response)
-                setState({ ...state, errorMsg: 'Error in retrieving the data' });
+                } */
+                if (!cleanupFunction) setState({
+                    ...state,
+                    firstName: localStorage.getItem('firstName'),
+                    lastName: localStorage.getItem('lastName'),
+                    email: localStorage.getItem('email'),
+                    phoneNumber: localStorage.getItem('phoneNumber'),
+                    country: localStorage.getItem('country'),
+                    username: localStorage.getItem('username'),
+                    uiLoading: false,
+                    //profilePicture: response.data.userCredentials.imageUrl
+                })
+                // console.log(error.response)
+                // setState({ ...state, errorMsg: 'Error in retrieving the data' });
             }
         };
 
