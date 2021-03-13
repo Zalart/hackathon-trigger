@@ -8,23 +8,19 @@
 .footer img{
     padding: 0 20px;
 }
-
 .footer__wcs-logo{
 width: 160px;
 height: 80px;
 padding: 0 20px;
 }
-
 .footer__info{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .footer__info p{
     color: red;
 }
-
 .footer__gitHubLogo{
     width: 25px;
     height: 25px;;
@@ -55,7 +51,6 @@ padding: 0 20px;
         margin: 8px;
     }
 }
-
 @media (max-width: 768px) {
     .footer__info{
         flex-direction: row;
