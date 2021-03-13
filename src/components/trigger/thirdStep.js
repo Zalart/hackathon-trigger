@@ -3,24 +3,29 @@ import { Button } from '@material-ui/core';
 import { useTrigger } from "../../TriggerContext";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import { Link } from "react-router-dom";
+import DescriptionStep from '../trigger/descriptionStep.js';
 
 function ThirdStep() {
     const { state, dispatch } = useTrigger();
     const [dateTrigger, setDateTrigger] = useState("");
     console.log(state.form.data)
 
-    const ChangeDate = (value) =>{
+    const ChangeDate = (value) => {
         setDateTrigger(value)
     }
 
     useEffect(() => {
-        if(state.form.dateTrigger.length > 0){
+        if (state.form.dateTrigger.length > 0) {
             setDateTrigger(state.form.dateTrigger);
         }
     }, [])
 
     return (
         <div>
+               <div>
+                <DescriptionStep />
+            </div>
             <h1>Date: {dateTrigger}</h1>
             <form className="classes.container" noValidate>
                 <TextField
@@ -39,9 +44,12 @@ function ThirdStep() {
                 <Button id="but-red" onClick={() => dispatch({ type: "stepBack2", payload: dateTrigger })} >
                     Go Back
                 </Button>
-                <Button id="but-white" onClick={() => dispatch({ type: 'stepThreeCompleted', payload: dateTrigger })}>
-                    Complete
-                </Button>
+                <Link to="/home">
+                    <Button id="but-white" onClick={() => dispatch({ type: 'stepThreeCompleted', payload: dateTrigger })}>
+                        Complete
+                    </Button>
+                </Link>
+
 
             </div>
         </div>

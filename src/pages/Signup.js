@@ -46,37 +46,13 @@ function Signup() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setState({
-            ...state,
-            loading: true
-        });
-        const newUserData = {
-            firstName: state.firstName,
-            lastName: state.lastName,
-            phoneNumber: state.phoneNumber,
-            country: state.country,
-            username: state.username,
-            email: state.email,
-            password: state.password,
-            confirmPassword: state.confirmPassword
-        };
-        axios
-            .post('/signup', newUserData)
-            .then((response) => {
-                localStorage.setItem('AuthToken', `${response.data.token}`);
-                setState({
-                    ...state,
-                    loading: false,
-                });
-                history.push('/home');
-            })
-            .catch((error) => {
-                setState({
-                    ...state,
-                    errors: error.response.data,
-                    loading: false
-                });
-            });
+        localStorage.setItem('firstName', state.firstName);
+        localStorage.setItem('lastName', state.lastName);
+        localStorage.setItem('phoneNumber', state.phoneNumber);
+        localStorage.setItem('country', state.country);
+        localStorage.setItem('userName', state.userNname);
+        localStorage.setItem('email', state.email);
+        history.push('/home');
     };
 
 

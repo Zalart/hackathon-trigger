@@ -1,7 +1,8 @@
 import React , {useState, useEffect} from 'react';
-import { Link } from "react-router-dom";
 import { Button } from '@material-ui/core';
 import { useTrigger } from "../../TriggerContext";
+import '../trigger/steps.css';
+import DescriptionStep from '../trigger/descriptionStep.js';
 
 function SecondStep() {
     const { state, dispatch } = useTrigger();
@@ -19,7 +20,10 @@ function SecondStep() {
     }, [])
     
     return (
-        <div>
+        <div className='second__step'>
+            <div>
+                <DescriptionStep />
+            </div>
             <textarea value={letter} onChange={(event) => changeLetter(event.target.value)}></textarea>
             <div>
                 <Button id="but-red" onClick={() => dispatch({type: "stepBack", payload: letter})} >

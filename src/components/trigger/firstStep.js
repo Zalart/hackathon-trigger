@@ -3,7 +3,9 @@ import RecieverInput from './recieverInput';
 import { useTrigger } from "../../TriggerContext";
 import { Link } from "react-router-dom";
 import { Button } from '@material-ui/core';
-// import '../components/trigger.css';
+import '../trigger/steps.css';
+import DescriptionStep from '../trigger/descriptionStep.js';
+
 
 function FirstStep() {
     const { state, dispatch } = useTrigger();
@@ -37,23 +39,30 @@ function FirstStep() {
     }
 
     return (
+        
         <div className='first__step'>
+            <div>
+                <DescriptionStep />
+            </div>
             {users.map((item) => {
                 return <input key={item.id} value={item.value} onChange={(event) => changesInput({ value: event.target.value, idx: item.id })}></input>
             })}
-
-            <button onClick={() => setUsers(prev => {
+ 
+            <button id="but-white" onClick={() => setUsers(prev => {
                 const newArray = prev.concat([{
                     id: prev.length + 1,
                     value: ''
                 }])
                 return newArray
             })} >Add more</button>
+            
+            
             <div>
+               
                 <Button id="but-red"  >
                     <Link to="/home">Go Back</Link>
                 </Button>
-                <Button id="but-white" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
+                <Button id="but-red" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
                     Next step
                 </Button>
             </div>

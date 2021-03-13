@@ -1,11 +1,13 @@
 import React from 'react'
 
-function triggerCard() {
+function TriggerCard({value, data}) {
+    console.log(value)
     return (
         <div>
-            This is a card
+            <h2>{value}</h2>
+            <h3>{data}</h3>
         </div>
     )
 }
 
-export default triggerCard
+export default TriggerCard

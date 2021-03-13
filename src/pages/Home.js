@@ -20,44 +20,15 @@ import ListItemText from '@material-ui/core/ListItemText';
 //import Avatar from '@material-ui/core/avatar';
 //import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import LeftSide from "../components/leftSide";
+import { Link } from "react-router-dom";
+import { Button } from '@material-ui/core';
+import TriggerCard from "../components/trigger/triggerCard"
+import { useTrigger } from "../TriggerContext";
 
 import { authChecker } from '../util/auth.js'
-const drawerWidth = 240;
-const styles = (theme) => ({
-    root: {
-        display: 'flex'
-    },
-    appBar: {
-        zIndex: theme.zIndex.drawer + 1
-    },
-    drawer: {
-        width: drawerWidth,
-        flexShrink: 0
-    },
-    drawerPaper: {
-        width: drawerWidth
-    },
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing(3)
-    },
-    avatar: {
-        height: 110,
-        width: 100,
-        flexShrink: 0,
-        flexGrow: 0,
-        marginTop: 20
-    },
-    uiProgess: {
-        position: 'fixed',
-        zIndex: '1000',
-        height: '31px',
-        width: '31px',
-        left: '50%',
-        top: '35%'
-    },
-    toolbar: theme.mixins.toolbar
-});
+
+
 
 const initialState = {
     render: false,
@@ -69,137 +40,44 @@ const initialState = {
 }
 
 function Home(props) {
-    let history = useHistory();
-    const [state, setState] = useState(initialState);
+   
 
-    const loadAccountPage = (event) => {
-        setState({
-            ...state,
-            render: true
-        });
-    };
-
-    const loadTriggersPage = (event) => {
-        setState({
-            ...state,
-            render: false
-        });
-    };
-
-    const logoutHandler = (event) => {
-        localStorage.removeItem('AuthToken');
-        history.push('/login');
-    };
-
+    // MINE 
+    const { state, dispatch } = useTrigger();
+    const localCards = JSON.parse(localStorage.getItem("cards") || "[]");
+    const [cards, setCards] = useState(localCards);
+    console.log(state.cards)
     useEffect(() => {
-        let cleanupFunction = false;
-        authChecker(history);
-        const authToken = localStorage.getItem('AuthToken');
-        axios.defaults.headers.common = { Authorization: `${authToken}` };
+        if(state.cards.length > 0){
+            // setCards(state.cards);
+            console.log(state.cards)
+        }
 
-        const getUserData = async () => {
-            try {
-                const response = await axios.get('/user');
-                const result = await response.data;
-                console.log(history);
-                if (!cleanupFunction) setState({
-                    ...state,
-                    firstName: localStorage.getItem('firstName'),
-                    lastName: localStorage.getItem('lastName'),
-                    email: localStorage.getItem('email'),
-                    phoneNumber: localStorage.getItem('phoneNumber'),
-                    country: localStorage.getItem('country'),
-                    username: localStorage.getItem('username'),
-                    uiLoading: false,
-                    //profilePicture: response.data.userCredentials.imageUrl
-                })
-                // непосредственное обновление состояния при условии, что компонент не размонтирован
-
-            } catch (error) {
-                /* if (error.response.status === 403) {
-                    history.push('/login');
-                } */
-                if (!cleanupFunction) setState({
-                    ...state,
-                    firstName: localStorage.getItem('firstName'),
-                    lastName: localStorage.getItem('lastName'),
-                    email: localStorage.getItem('email'),
-                    phoneNumber: localStorage.getItem('phoneNumber'),
-                    country: localStorage.getItem('country'),
-                    username: localStorage.getItem('username'),
-                    uiLoading: false,
-                    //profilePicture: response.data.userCredentials.imageUrl
-                })
-                // console.log(error.response)
-                // setState({ ...state, errorMsg: 'Error in retrieving the data' });
-            }
-        };
-
-        getUserData();
-        return () => cleanupFunction = true;
-    }, []);
+        console.log(cards)
+    }, [])
 
 
 
-    if (state.uiLoading === true) {
         return (
-            <div>
-                {state.uiLoading && <CircularProgress size={150} />}
+            <div className="TriggerPage">           
+            <div  className="LeftSight">   
+                         
+                <LeftSide progress={state.progress} />
             </div>
-        );
-    } else {
-        return (
-            <div>
-                <CssBaseline />
-                <AppBar position="fixed">
-                    <Toolbar>
-                        <Typography variant="h6" noWrap>
-                            Triggers
-                                    </Typography>
-                    </Toolbar>
-                </AppBar>
-                <Drawer
-                    variant="permanent"
-                >
-                    <div />
-                    <Divider />
-                    <center>
-                        {/*                         <Avatar src={this.state.profilePicture} className={classes.avatar} /> */}
-                        <p>
-                            {' '}
-                            {state.firstName} {state.lastName}
-                        </p>
-                    </center>
-                    <Divider />
-                    <List>
-                        <ListItem button key="Todo" onClick={loadTriggersPage}>
-                            <ListItemIcon>
-                                {' '}
-                            </ListItemIcon>
-                            <ListItemText primary="Trigger" />
-                        </ListItem>
-
-                        <ListItem button key="Account" onClick={loadAccountPage}>
-                            <ListItemIcon>
-                                {' '}
-                            </ListItemIcon>
-                            <ListItemText primary="Account" />
-                        </ListItem>
-
-                        <ListItem button key="Logout" onClick={logoutHandler}>
-                            <ListItemIcon>
-                                {' '}
-                            </ListItemIcon>
-                            <ListItemText primary="Logout" />
-                        </ListItem>
-                    </List>
-                </Drawer>
-
-                <div>{state.render ? <Account /> : <Trigger />}</div>
+            <div className="FieldTriggers">
+                <div className="FieldCards">
+                    { cards.map(card => <TriggerCard value={card.value} data={card.data} />)}
+                </div>
+                <br />
+                <Link to="/trigger">
+                    <Button id="but-red">
+                        Add a trigger
+                    </Button>
+                </Link>
             </div>
+        </div>
         );
     }
 
 
-}
 export default Home;

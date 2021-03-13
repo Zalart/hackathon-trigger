@@ -61,7 +61,7 @@ const reducer = (state, action) => {
                     data: new Date(),
                     value: 'text',
                     targetUsers: [],
-                    dateTrigger: ""
+                    dateTrigger: action.payload
                 }
             }
         default: 
