@@ -27,10 +27,10 @@ function Welcome() {
                         <Link to="/registration">Registration</Link>
                     </Button> */}
                                       
-                    <Button id="but-test"  >
+                    <Button id="but-red"  >
                         <Link to="/registration">Registration</Link>
                     </Button>
-                    <Button id="but-test"  >
+                    <Button id="but-red"  >
                     Registration
                     </Button>
                     {/* <Button id="botr" >
