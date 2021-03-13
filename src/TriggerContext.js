@@ -1,4 +1,4 @@
-import React, { useContext, useReducer} from 'react'
+import React, { useContext, useReducer } from 'react'
 
 const TriggerContext = React.createContext();
 
@@ -14,20 +14,31 @@ const initialState = {
 }
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'stepOneCompleted': 
+        case 'stepOneCompleted':
             return {
                 ...state,
-                progress: state.progress+1,
+                progress: state.progress + 1,
                 form: {
                     ...state.form,
                     targetUsers: action.payload
                 }
 
             }
+        case "stepHome":
+            return {
+                progress: 1,
+                form: {
+                    data: new Date(),
+                    value: 'text',
+                    targetUsers: [],
+                    dateTrigger: ""
+                },
+                cards: JSON.parse(localStorage.getItem("cards") || "[]")
+            }
         case "stepBack":
             return {
                 ...state,
-                progress: state.progress-1,
+                progress: state.progress - 1,
                 form: {
                     ...state.form,
                     value: action.payload
@@ -36,16 +47,16 @@ const reducer = (state, action) => {
         case "stepBack2":
             return {
                 ...state,
-                progress: state.progress-1,
+                progress: state.progress - 1,
                 form: {
                     ...state.form,
                     dateTrigger: action.payload
                 }
             }
         case "stepTwoCompleted":
-            return{
+            return {
                 ...state,
-                progress: state.progress+1,
+                progress: state.progress + 1,
                 form: {
                     ...state.form,
                     value: action.payload
@@ -54,7 +65,7 @@ const reducer = (state, action) => {
         case "stepThreeCompleted":
             state.cards.push(state.form);
             localStorage.setItem("cards", JSON.stringify(state.cards));
-            return{
+            return {
                 ...state,
                 progress: 1,
                 form: {
@@ -64,7 +75,7 @@ const reducer = (state, action) => {
                     dateTrigger: action.payload
                 }
             }
-        default: 
+        default:
             return state;
     }
 }
@@ -73,12 +84,12 @@ export function useTrigger() {
     return useContext(TriggerContext);
 }
 
-export function TriggerProvider({ children }){
+export function TriggerProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState)
-    
+
 
     return (
-        <TriggerContext.Provider value={{state, dispatch}}>
+        <TriggerContext.Provider value={{ state, dispatch }}>
             {children}
         </TriggerContext.Provider>
     )

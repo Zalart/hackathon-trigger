@@ -59,7 +59,7 @@ function FirstStep() {
             
             <div>
                <Link to="/home">
-                   <Button id="but-red" onClick={() => dispatch({ type: 'stepOneCompleted', payload: users })}>
+                   <Button id="but-red" onClick={() => dispatch({ type: 'stepHome', payload: users })}>
                        Go Back
                    </Button>
                </Link>

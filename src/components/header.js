@@ -16,7 +16,7 @@ function header() {
                 Triggers
             </a>
             <a className="header-item__round" href='/'>
-                U
+            {localStorage.getItem('firstName') ? localStorage.getItem("firstName").trim().slice(0,1).toUpperCase() : null}
             </a>
             </div>
         </div>

@@ -62,7 +62,7 @@ function Home(props) {
             <div className="TriggerPage">           
             <div  className="LeftSight">   
                          
-                <LeftSide progress={state.progress} />
+                <LeftSide />
             </div>
             <div className="FieldTriggers">
                 <div className="FieldCards">
