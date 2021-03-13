@@ -1,3 +1,10 @@
+# TRIGGER
+
+    Our app will help you! the"TRIGGER"will send whatever you need ... whoever you want ... when you need ...
+    
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
