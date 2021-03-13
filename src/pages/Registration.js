@@ -38,12 +38,15 @@ function Registration() {
                 {/* <h1>It's a registration page</h1>               */}
                 <h3>
                     <br></br>
-                    Not registered on our site yet?
+                    Not  <span class="colortext"> registered  </span>on our site yet?
                 </h3>
                 <p>
-                Then quickly click on the registration button to get started soon  
-                 </p>
-                <Link to="/home">To Home page</Link>
+                    Then quickly click on the registration button to get started soon ...  
+                </p>
+                <p>
+                     ... your letter will be sent at that trigger moment you specify
+                </p>
+                 <Link to="/home">To Home page</Link>
 
                 
             </div>
