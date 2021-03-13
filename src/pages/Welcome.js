@@ -8,18 +8,18 @@ function Welcome() {
             <div className="welcome_pic">
                 <div>
                     <p>
-                        Some things should 
+                        Some things should
                     </p>
-                    <p>  
-                        be definetely 
-                            <span class="colortext"> 
-                                DONE
+                    <p>
+                        be definetely
+                            <span className="colortext">
+                            DONE
                             </span>
                     </p>
                 </div>
                 <div className="welcome_but">
                     <Button className="button" variant="contained" color="secondary" >
-                        <Link to="/registration">Registration</Link>
+                        <Link to="/login">Login</Link>
                     </Button>
                 </div>
             </div>
@@ -28,15 +28,15 @@ function Welcome() {
             <div className="welcome_text">
                 {/* <h1>Welcome page</h1> */}
                 <p>
-                    <span class="colortext"> Sometimes  </span>
+                    <span className="colortext"> Sometimes  </span>
                      we need someone to act in our favor.
                 </p>
-                <p> You can ask your friend, relative, or collegue.</p>
-                <p>  What happens if they forget to do something really important? You never know...</p>
-                <p> We’ll make sure that somthing will be done on time trigger, event or  periodically</p>
+                <p>You can ask your friend, relative, or collegue.</p>
+                 <p> What happens if they forget to do somethingreally important? You never know...</p>
+                                    <p>We’ll make sure that somthing will be done on time trigger, event or periodically</p>
             </div>
                     
-        </div>
+                            </div>
     )
 }
 
