@@ -36,7 +36,7 @@ function App() {
               <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
             </Switch>
           </div>
-          <div className="footer">
+          <div className="footer_wrapper">
             <Footer />
           </div>
         </TriggerProvider> */}

@@ -15,9 +15,71 @@
     text-align: center;
 }
 
+
+
+
 .FieldTriggers {
     width: 70%;
     margin-top: 10%;
     text-align: center;
 }
+.TriggerBut {
+    width: 60%; 
+    height: 20%; 
+}
 
+.Triggercard {
+width: 60%; 
+height: 60%; 
+border: 2px solid grey;
+text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .Home-Wrapper{
+        flex-direction: column;
+        
+    }
+    .FieldPerson {      
+       margin-top: 10%;
+       margin-left: 10%;
+       border-bottom: 2px solid grey;
+       border-right: 2px solid rgb(255, 255, 255);
+       width: 450px; 
+        height: 100px; 
+        text-align: center;
+    }
+    .FieldTriggers {
+        margin-left: 30%;
+        margin-top: 10%;
+            text-align: center;
+    }
+    .Triggercard {
+        margin-top: 10%;
+      
+        }
+
+
+}
+
+@media (max-width: 480px) {
+    
+    .FieldPerson {      
+      
+       width: 250px; 
+        height: 100px; 
+        text-align: center;
+    }
+    .FieldTriggers {
+        margin-left: 10%;
+        margin-top: 10%;
+            text-align: center;
+    }
+    #but-red {
+        width: 50%; 
+        height: 50%; 
+    }
+
+
+}

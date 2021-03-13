@@ -4,15 +4,15 @@ import '../components/header.css';
 function header() {
     return (
         <div className="header">
-            <div className="header-item">
+            <a className="header-item" href='#'>
                 Home
-            </div >
-            <div className="header-item">
-               Triggers
-            </div>
-            <div className="header-item">
-               U
-            </div>
+            </a>
+            <a className="header-item" href='#'>
+                Triggers
+            </a>
+            <a className="header-item__round" href='#'>
+                U
+            </a>
         </div>
     )
 }
