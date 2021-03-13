@@ -18,6 +18,7 @@ padding: 0 20px;
 .footer__info{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .footer__info p{
@@ -71,10 +72,6 @@ padding: 0 20px;
     .footer__info{
         flex-direction: column;
     }
-    /* .footer__github-links{
-    flex-wrap: wrap;
-    place-items: center;
-} */
 }
 
 
