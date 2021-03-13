@@ -4,7 +4,15 @@ import '../components/header.css';
 function header() {
     return (
         <div className="header">
-            <p>тут будет header, вероятно </p>
+            <div className="header-item">
+                Home
+            </div >
+            <div className="header-item">
+               Triggers
+            </div>
+            <div className="header-item">
+               U
+            </div>
         </div>
     )
 }
