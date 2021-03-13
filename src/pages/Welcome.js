@@ -18,9 +18,16 @@ function Welcome() {
                     </p>
                 </div>
                 <div className="welcome_but">
-                    <Button className="button" variant="contained" color="secondary" >
+                    {/* <Button className="button" variant="contained" color="secondary" >
                         <Link to="/registration">Registration</Link>
                     </Button>
+                    <Button id="but-test"  >
+                        <Link to="/registration">Registration</Link>
+                    </Button> */}
+                    <Button id="botr" >
+                        <Link to="/registration">Registration</Link>
+                    </Button>
+
                 </div>
             </div>
 
