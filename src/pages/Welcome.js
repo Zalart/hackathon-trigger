@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { Link } from "react-router-dom";
 import { Button } from '@material-ui/core';
+
 
 function Welcome() {
     return (
@@ -18,9 +20,19 @@ function Welcome() {
                     </p>
                 </div>
                 <div className="welcome_but">
-                    <Button className="button" variant="contained" color="secondary" >
+                    <Button  >
                         <Link to="/registration">Registration</Link>
                     </Button>
+                  
+                    <Link to="/registration">Registration</Link>
+                    {/* <Button id="but-test"  >
+                        <Link to="/registration">Registration</Link>
+                    </Button>
+                    <Button id="botr" >
+                        <Link to="/registration">Registration</Link>
+                    </Button> */}
+
+
                 </div>
             </div>
 
