@@ -1,9 +1,15 @@
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
+    justify-content: flex-end;
     background-color: #E90538;
     align-items: center;
 
     height: 30px;
+}
+
+.header-item {
+    margin-right: 10px;
+    font: 12pt robota; 
+    font-weight: 600; 
 }
