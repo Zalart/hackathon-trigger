@@ -1,0 +1,21 @@
+
+.TriggerPage {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.LeftSight {
+    width: 30%;
+    margin-top: 5%;
+    border-right: 2px solid grey;
+    width: 200px; 
+     height: 500px; 
+     text-align: center;
+}
+
+.FieldTriggers {
+    width: 70%;
+    margin-top: 5%;
+    text-align: center;
+}
+

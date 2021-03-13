@@ -7,9 +7,10 @@ const initialState = {
     form: {
         data: new Date(),
         value: 'text',
-        targetUsers: []
+        targetUsers: [],
+        dateTrigger: ""
     },
-    cards: []
+    cards: JSON.parse(localStorage.getItem("cards") || "[]")
 }
 const reducer = (state, action) => {
     switch (action.type) {
@@ -27,6 +28,19 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 progress: state.progress-1,
+                form: {
+                    ...state.form,
+                    value: action.payload
+                }
+            }
+        case "stepBack2":
+            return {
+                ...state,
+                progress: state.progress-1,
+                form: {
+                    ...state.form,
+                    dateTrigger: action.payload
+                }
             }
         case "stepTwoCompleted":
             return{
@@ -39,13 +53,15 @@ const reducer = (state, action) => {
             }
         case "stepThreeCompleted":
             state.cards.push(state.form);
+            localStorage.setItem("cards", JSON.stringify(state.cards));
             return{
                 ...state,
                 progress: 1,
                 form: {
                     data: new Date(),
                     value: 'text',
-                    targetUsers: []
+                    targetUsers: [],
+                    dateTrigger: ""
                 }
             }
         default: 

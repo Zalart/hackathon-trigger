@@ -12,7 +12,7 @@ function SecondStep() {
     }
 
     useEffect(() => {
-        console.log(state.form.value.length);
+        
         if(state.form.value.length > 0){
             setLetter(state.form.value);
         }
@@ -22,7 +22,7 @@ function SecondStep() {
         <div>
             <textarea value={letter} onChange={(event) => changeLetter(event.target.value)}></textarea>
             <div>
-                <Button id="but-red" onClick={() => dispatch({type: "stepBack", payload: "null"})} >
+                <Button id="but-red" onClick={() => dispatch({type: "stepBack", payload: letter})} >
                     Go Back
                 </Button>
                 <Button id="but-white" onClick={() => dispatch({ type: 'stepTwoCompleted', payload: letter})}>
