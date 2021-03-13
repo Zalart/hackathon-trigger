@@ -13,10 +13,11 @@ function Home() {
                 <Link>To welcome page</Link>
             </div>
             <div className="FieldTriggers">
-                
+                <div className="TriggerBut">
                 <Button id="but-red"  >
                     <Link to="/trigger">Add trigger</Link>
                 </Button>
+                </div>
                 <div className="Triggercard">
                     <br></br> 
                     <p>next </p>

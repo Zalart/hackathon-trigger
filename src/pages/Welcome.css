@@ -96,7 +96,10 @@
    
   }
   
+  #but-red a {
+    color: #bababa;
 
+  }
   
 /* button white */
 
@@ -149,3 +152,27 @@
     box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
 }
 
+  #but-white a {
+    color: black;
+    
+  }
+
+  @media (max-width: 480px) {
+    
+    #but-red {
+        width: 50%; 
+        height: 50%; 
+    }
+    #but-red  a{
+      font-size: 12pt; 
+  }
+
+
+    #but-white {
+      width: 50%; 
+      height: 50%; 
+  }
+  #but-white a{
+    font-size: 12pt; 
+}
+}

@@ -30,9 +30,7 @@ function Welcome() {
                     <Button id="but-red"  >
                         <Link to="/registration">Registration</Link>
                     </Button>
-                    <Button id="but-red"  >
-                    Registration
-                    </Button>
+                  
                     {/* <Button id="botr" >
                         <Link to="/registration">Registration</Link>
                     </Button>  */}
