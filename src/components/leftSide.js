@@ -7,8 +7,12 @@ import '../pages/Welcome.css';
 function leftSide({ progress }) {
     return (
         <div>
-            <h4 className="name">{localStorage.getItem('firstName')} {localStorage.getItem('lastName')}</h4>
+            <h2 className="name">{localStorage.getItem('firstName')} {localStorage.getItem('lastName')}</h2>
+            <br></br>
             <div>
+                 <img width="180 px"  src="https://c0.klipartz.com/pngpicture/630/366/gratis-png-icono-de-la-persona-boton-circulo-iconos-de-la-computadora-circulo.png" />
+            </div>
+            {!progress ? null :     <div>
                 <h1>STEPS</h1>
                 <br></br>
 
@@ -17,7 +21,8 @@ function leftSide({ progress }) {
                 <h1 className={progress == 2 ? "colortext" : "regularStep"}>{progress == 2 ? 'now 2 step' : 2}</h1>
                 <h1 className={progress == 3 ? "colortext" : "regularStep"}>{progress == 3 ? 'now 3 step' : 3}</h1>
                 {/* <button onClick={()=>history.push('/')}> Log out<button> */}
-            </div>
+            </div>}
+        
 
         </div>
     )

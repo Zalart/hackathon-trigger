@@ -6,7 +6,7 @@ const initialState = {
     progress: 1,
     form: {
         data: new Date(),
-        value: 'text',
+        value: '',
         targetUsers: [],
         dateTrigger: ""
     },
@@ -29,7 +29,7 @@ const reducer = (state, action) => {
                 progress: 1,
                 form: {
                     data: new Date(),
-                    value: 'text',
+                    value: '',
                     targetUsers: [],
                     dateTrigger: ""
                 },
@@ -63,6 +63,7 @@ const reducer = (state, action) => {
                 }
             }
         case "stepThreeCompleted":
+            state.form.dateTrigger = action.payload
             state.cards.push(state.form);
             localStorage.setItem("cards", JSON.stringify(state.cards));
             return {
@@ -70,9 +71,9 @@ const reducer = (state, action) => {
                 progress: 1,
                 form: {
                     data: new Date(),
-                    value: 'text',
+                    value: '',
                     targetUsers: [],
-                    dateTrigger: action.payload
+                    dateTrigger: ""
                 }
             }
         default:

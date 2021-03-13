@@ -66,7 +66,7 @@ function Home(props) {
             </div>
             <div className="FieldTriggers">
                 <div className="FieldCards">
-                    { cards.map(card => <TriggerCard value={card.value} data={card.data} />)}
+                    { cards.map(card => <TriggerCard value={card.value} key={card.data} data={card.dateTrigger} users={card.targetUsers} />)}
                 </div>
                 <br />
                 <Link to="/trigger">

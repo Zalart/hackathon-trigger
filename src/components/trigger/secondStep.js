@@ -26,10 +26,10 @@ function SecondStep() {
             </div>
             <textarea className='textarea' value={letter} onChange={(event) => changeLetter(event.target.value)}></textarea>
             <div className='second__step-btn'>
-                <Button id="but-red" onClick={() => dispatch({type: "stepBack", payload: letter})} >
+                <Button  id="but-red" onClick={() => dispatch({type: "stepBack", payload: letter})} >
                     Go Back
                 </Button>
-                <Button id="but-white" onClick={() => dispatch({ type: 'stepTwoCompleted', payload: letter})}>
+                <Button  id="but-white" onClick={() => dispatch({ type: 'stepTwoCompleted', payload: letter})}>
                     Next step
                 </Button>
             </div>

@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import { Link } from "react-router-dom";
 import DescriptionStep from '../trigger/descriptionStep.js';
+import '../trigger/steps.css';
 
 function ThirdStep() {
     const { state, dispatch } = useTrigger();
@@ -12,7 +13,8 @@ function ThirdStep() {
     console.log(state.form.data)
 
     const ChangeDate = (value) => {
-        setDateTrigger(value)
+        const date = new Date(value).toLocaleDateString('ru-Ru');
+        setDateTrigger(date)
     }
 
     useEffect(() => {
@@ -40,7 +42,7 @@ function ThirdStep() {
                     }}
                 />
             </form>
-            <div>
+            <div className='third__step'>
                 <Button id="but-red" onClick={() => dispatch({ type: "stepBack2", payload: dateTrigger })} >
                     Go Back
                 </Button>
