@@ -11,16 +11,20 @@ function Welcome() {
                 <div>
                            
                     <p>
-                        Some things should 
+                        Some things should
                     </p>
-                    <p>  
-                        be definetely 
-                            <span class="colortext"> 
-                                DONE
+                    <p>
+                        be definetely
+                            <span className="colortext">
+                            DONE
                             </span>
                     </p>
                 </div>
                 <div className="welcome_but">
+<<<<<<< HEAD
+                    <Button className="button" variant="contained" color="secondary" >
+                        <Link to="/login">Login</Link>
+=======
                    
                     {/* 
                     <Button  variant="contained" color="secondary">
@@ -32,6 +36,7 @@ function Welcome() {
                     </Button>
                     <Button id="but-red"  >
                     Registration
+>>>>>>> origin/mastercopy
                     </Button>
                     {/* <Button id="botr" >
                         <Link to="/registration">Registration</Link>
@@ -54,14 +59,20 @@ function Welcome() {
                     Simple and powerful. Everything you need to start is available free on this website
                 </p> 
                 <p>
-                    <span class="colortext"> Sometimes  </span>
+                    <span className="colortext"> Sometimes  </span>
                      we need someone to act in our favor.
                 </p>
+<<<<<<< HEAD
+                <p>You can ask your friend, relative, or collegue.</p>
+                 <p> What happens if they forget to do somethingreally important? You never know...</p>
+                                    <p>We’ll make sure that somthing will be done on time trigger, event or periodically</p>
+=======
                 <h3> You can ask your friend, relative, or collegue.</h3>
                 <p>  What happens if they forget to do something really important? You never know... We’ll make sure that somthing will be done on time trigger, event or  periodically</p>
+>>>>>>> origin/mastercopy
             </div>
                     
-        </div>
+                            </div>
     )
 }
 
