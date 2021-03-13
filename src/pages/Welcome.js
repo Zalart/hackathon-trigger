@@ -6,58 +6,61 @@ import '../pages/Welcome.css';
 function Welcome() {
     return (
         <div className="welcome_page">
-           
+
             <div className="welcome_pic">
-                <div>
-                           
-                    <p>
-                        Some things should
+                <p>
+                    Some things should
                     </p>
-                    <p>
-                        be definetely
+                <p>
+                    be definetely
                             <span className="colortext">
-                            DONE
+                        DONE
                             </span>
-                    </p>
+                </p>
+                <div className="welcome_but">
+
+                    {/* 
+                    <Button  variant="contained" color="secondary">
+                        <Link to="/registration">Registration</Link>
+                    </Button> */}
+
+                    <Button id="but-red"  >
+                        <Link to="/signup">Registration</Link>
+                    </Button>
+                    <Button id="but-red"  >
+                        <Link to="/login">Login</Link>
+                    </Button>
+                    {/* <Button id="botr" >
+                        <Link to="/registration">Registration</Link>
+                    </Button>  */}
                 </div>
-                <div className="welcome_but">        
-                   <Link to="/signup"> <Button id="but-red">
-                        Registration
-                    </Button></Link>
-                   <Link to="/login"> <Button id="but-red">Sign In
-                    </Button></Link>
 
-                  
-
-
-
-
-                </div>
             </div>
-
 
             <div className="welcome_text">
                 <p>
-                    <span class="colortext"> 
-                         A Simple Act
+                    <span class="colortext">
+                        A Simple Act
                     </span>
-                    </p> 
+                </p>
                 <b>that will change your life</b>
-                
-                <p>  
-                    Simple and powerful. Everything you need to start is available free on this website
-                </p> 
+
                 <p>
-                    <span className="colortext"> Sometimes  </span>
+                    Simple and powerful. Everything you need to start is available free on this website
+                </p>
+                <p>
+                    <span className="colortext"> Sometimes</span>
                      we need someone to act in our favor.
                 </p>
 
                 <h3>You can ask your friend, relative, or collegue.</h3>
-                <p> What happens if they forget to do something really important? You never know... We’ll make sure that somthing will be done on time trigger, event or periodically</p>
-            </div>
-                    
-                            </div>
-    )
-}
+                 <p> What happens if they forget to do something really important? You never know... We’ll make sure that something will be done on time trigger, event or periodically</p>
+                                                
+                </div>
+        </div>
 
-export default Welcome
+                                
+    );
+    }
+                
+    export default Welcome;                                                
