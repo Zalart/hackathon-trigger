@@ -20,27 +20,16 @@ function Welcome() {
                             </span>
                     </p>
                 </div>
-                <div className="welcome_but">
-<<<<<<< HEAD
-                    <Button className="button" variant="contained" color="secondary" >
-                        <Link to="/login">Login</Link>
-=======
-                   
-                    {/* 
-                    <Button  variant="contained" color="secondary">
-                        <Link to="/registration">Registration</Link>
-                    </Button> */}
-                                      
-                    <Button id="but-red"  >
-                        <Link to="/registration">Registration</Link>
-                    </Button>
-                    <Button id="but-red"  >
-                    Registration
->>>>>>> origin/mastercopy
-                    </Button>
-                    {/* <Button id="botr" >
-                        <Link to="/registration">Registration</Link>
-                    </Button>  */}
+                <div className="welcome_but">        
+                   <Link to="/signup"> <Button id="but-red">
+                        Registration
+                    </Button></Link>
+                   <Link to="/login"> <Button id="but-red">Sign In
+                    </Button></Link>
+
+                  
+
+
 
 
                 </div>
@@ -62,14 +51,9 @@ function Welcome() {
                     <span className="colortext"> Sometimes  </span>
                      we need someone to act in our favor.
                 </p>
-<<<<<<< HEAD
-                <p>You can ask your friend, relative, or collegue.</p>
-                 <p> What happens if they forget to do somethingreally important? You never know...</p>
-                                    <p>We’ll make sure that somthing will be done on time trigger, event or periodically</p>
-=======
-                <h3> You can ask your friend, relative, or collegue.</h3>
-                <p>  What happens if they forget to do something really important? You never know... We’ll make sure that somthing will be done on time trigger, event or  periodically</p>
->>>>>>> origin/mastercopy
+
+                <h3>You can ask your friend, relative, or collegue.</h3>
+                <p> What happens if they forget to do something really important? You never know... We’ll make sure that somthing will be done on time trigger, event or periodically</p>
             </div>
                     
                             </div>
