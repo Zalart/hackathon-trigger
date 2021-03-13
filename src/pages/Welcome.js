@@ -20,6 +20,7 @@ function Welcome() {
                     </p>
                 </div>
                 <div className="welcome_but">
+
                     <Button  >
                         <Link to="/registration">Registration</Link>
                     </Button>

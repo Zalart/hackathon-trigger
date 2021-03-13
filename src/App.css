@@ -112,7 +112,11 @@
    -moz-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
      -o-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
         transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+
 /* }
+
+
+}
 
 #botr:hover{
   width:225px;
@@ -125,4 +129,5 @@
   -webkit-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
    -moz-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
      -o-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+
         transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */ 
