@@ -4,7 +4,7 @@ import FormControl from '@material-ui/core/FormControl';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 
-function recieverInput() {
+function RecieverInput() {
     return (
         <div>
             <input type={"text"}></input>
@@ -24,4 +24,4 @@ function recieverInput() {
     )
 }
 
-export default recieverInput
+export default RecieverInput

@@ -1,20 +1,23 @@
 import React, { useState, useContext } from 'react'
 import LeftSide from "../components/leftSide";
-import firstStep from "../components/trigger/firstStep";
-import secondStep from "../components/trigger/secondStep";
-import { useTrigger } from "./TriggerContext";
+import FirstStep from "../components/trigger/firstStep";
+import SecondStep from "../components/trigger/secondStep";
+import { useTrigger } from "../TriggerContext";
 
 
 
 
 function Trigger() {
-    const prog = useTrigger();
+    const {state, dispatch} = useTrigger();
+    console.log(state);
+
+    
+    
     return (
         <div>
-            <LeftSide />
+            <LeftSide progress={state.progress} />
             <div className="FieldTriggers">
-                <h1>{prog}</h1>
-                {prog == 0 ? firstStep : secondStep}
+                {state.progress ? <FirstStep/> : <SecondStep/>}
             </div>
         </div>
     )

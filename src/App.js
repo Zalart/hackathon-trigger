@@ -6,7 +6,7 @@ import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
 import Trigger from "./pages/Trigger";
 import Registration from "./pages/Registration";
-import { TriggerProvider } from "./pages/TriggerContext"
+import { TriggerProvider } from "./TriggerContext"
 
 function App() {
   return (

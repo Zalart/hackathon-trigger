@@ -4,6 +4,7 @@ function thirdStep() {
     return (
         <div>
             <h1>Date:</h1>
+            <button>Done</button>
         </div>
     )
 }

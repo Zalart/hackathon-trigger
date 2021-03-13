@@ -1,8 +1,9 @@
 import React from 'react'
 
-function leftSide() {
+function leftSide({progress}) {
     return (
         <div>
+            <h2>{progress}</h2>
             LeftSide
         </div>
     )
