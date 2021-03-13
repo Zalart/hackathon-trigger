@@ -2,11 +2,30 @@ import React, { useState, useEffect } from 'react';
 
 import Typography from '@material-ui/core/Typography';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { Card, CardActions, CardContent, Divider, Button, Grid, TextField } from '@material-ui/core';
+import { Avatar, Card, CardActions, CardContent, Divider, Button, Grid, TextField, makeStyles } from '@material-ui/core';
 import { useHistory } from "react-router-dom";
 //import clsx from 'clsx';
 import axios from 'axios';
 import { authChecker } from '../util/auth'
+const useStyles = makeStyles((theme) => ({
+    paper: {
+        marginTop: theme.spacing(8),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    avatar: {
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.secondary.main,
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(3),
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+    },
+}));
 
 const initialState = {
     firstName: '',
@@ -45,10 +64,10 @@ function Account(props) {
                 });
             })
             .catch((error) => {
-                if (error.response.status === 403) {
-                    history.push('/login');
-                }
-                console.log(error);
+                // if (error.response.status === 403) {
+                // history.push('/login');
+                // }
+                // console.log(error);
                 setState({ ...state, errorMsg: 'Error in retrieving the data' });
             });
     }, []);

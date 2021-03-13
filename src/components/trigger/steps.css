@@ -4,30 +4,24 @@ flex-direction: column;
 margin-top: 30px;
 }
 
-.first__step input{
+/* .first__step input{
         margin-bottom: 10px;
         height: 30px;
-        /* border-radius: 5px; */
-}
+        /* border-radius: 5px; 
+} */
 
-.first__step button{
+/* .first__step button{
     margin-bottom: 10px;
     height: 50px;
     font-size: 24px;
     font-weight: 600;
     margin: 15px 30px;
-}
+} */
 h4.name {
 margin: 15px 15px 30px 0;
 }
 a {
     text-decoration: none;
-}
-
-.textarea{
-    width: 70%;
-    height: 240px;
-    padding: 20px;
 }
 
 .second__step-btn button,
