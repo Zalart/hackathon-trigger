@@ -44,6 +44,15 @@ function Welcome() {
                         <Link to="/registration">Registration</Link>
                     </Button>  */}
 
+                    <Button id="but-red"  >
+                        <Link to="/signup">Registration</Link>
+                    </Button>
+                    <Button id="but-red"  >
+                        <Link to="/login">Login</Link>
+                    </Button>
+                    {/* <Button id="botr" >
+                        <Link to="/registration">Registration</Link>
+                    </Button>  */}
                 </div>
 
             </div>

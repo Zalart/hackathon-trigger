@@ -51,7 +51,7 @@ function Account(props) {
                 console.log(error);
                 setState({ ...state, errorMsg: 'Error in retrieving the data' });
             });
-    }, [state]);
+    }, []);
 
     const handleChange = (event) => {
         setState({
