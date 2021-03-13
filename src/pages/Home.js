@@ -2,17 +2,29 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import LeftSide from "../components/leftSide";
 import triggerCard from "../components/trigger/triggerCard";
-
+import './Home.css';
+import { Button } from '@material-ui/core';
 
 function Home() {
     return (
         <div className="Home-Wrapper">
-            <LeftSide />
-            <div className="FieldTriggers">
-                <triggerCard />
-                <Link to="/trigger"><button>Add the trigger</button></Link>
+            <div className="FieldPerson">         
+                <LeftSide />
+                <Link>To welcome page</Link>
             </div>
-            <Link>To welcome page</Link>
+            <div className="FieldTriggers">
+                
+                <Button id="but-red"  >
+                    <Link to="/trigger">Add trigger</Link>
+                </Button>
+                <div className="Triggercard">
+                    <br></br> 
+                    <p>next </p>
+                    <p> trigger card</p>
+                    <triggerCard />
+                </div>
+            </div>
+            
         </div>
     )
 }

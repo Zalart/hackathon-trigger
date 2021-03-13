@@ -1,0 +1,23 @@
+.Home-Wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+.FieldPerson {
+    width: 30%;
+   margin-top: 10%;
+   border-right: 2px solid grey;
+   width: 200px; 
+    height: 500px; 
+    text-align: center;
+}
+
+.FieldTriggers {
+    width: 70%;
+    margin-top: 10%;
+    text-align: center;
+}
+
