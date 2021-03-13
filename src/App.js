@@ -13,14 +13,18 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <TriggerProvider>
-          <Header />
-          <Switch>
-            <Route exact path="/" render={(props) => <Welcome {...props} />} />
-            <Route exact path="/home" render={(props) => <Home {...props} />} />
-            <Route exact path="/registration" render={(props) => <Registration {...props} />} />
-            <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
-          </Switch>
-          <Footer />
+          <div className="content">
+            <Header />
+            <Switch>
+              <Route exact path="/" render={(props) => <Welcome {...props} />} />
+              <Route exact path="/home" render={(props) => <Home {...props} />} />
+              <Route exact path="/registration" render={(props) => <Registration {...props} />} />
+              <Route exact path="/trigger" render={(props) => <Trigger {...props} />} />
+            </Switch>
+          </div>
+          <div className="footer">
+            <Footer />
+          </div>
         </TriggerProvider>
       </BrowserRouter>
     </div>
