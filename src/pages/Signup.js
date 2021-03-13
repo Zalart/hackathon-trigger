@@ -75,6 +75,7 @@ function Signup() {
                                 id="firstName"
                                 label="First Name"
                                 name="firstName"
+                                color="secondary"
                                 autoComplete="firstName"
                                 helperText={errors.firstName}
                                 error={errors.firstName ? true : false}
@@ -89,6 +90,7 @@ function Signup() {
                                 id="lastName"
                                 label="Last Name"
                                 name="lastName"
+                                color="secondary"
                                 autoComplete="lastName"
                                 helperText={errors.lastName}
                                 error={errors.lastName ? true : false}
@@ -104,6 +106,7 @@ function Signup() {
                                 id="username"
                                 label="User Name"
                                 name="username"
+                                color="secondary"
                                 autoComplete="username"
                                 helperText={errors.username}
                                 error={errors.username ? true : false}
@@ -119,6 +122,7 @@ function Signup() {
                                 id="phoneNumber"
                                 label="Phone Number"
                                 name="phoneNumber"
+                                color="secondary"
                                 autoComplete="phoneNumber"
                                 pattern="[7-9]{1}[0-9]{9}"
                                 helperText={errors.phoneNumber}
@@ -135,6 +139,7 @@ function Signup() {
                                 id="email"
                                 label="Email Address"
                                 name="email"
+                                color="secondary"
                                 autoComplete="email"
                                 helperText={errors.email}
                                 error={errors.email ? true : false}
@@ -150,6 +155,7 @@ function Signup() {
                                 id="country"
                                 label="Country"
                                 name="country"
+                                color="secondary"
                                 autoComplete="country"
                                 helperText={errors.country}
                                 error={errors.country ? true : false}
@@ -162,6 +168,7 @@ function Signup() {
                                 variant="outlined"
                                 required
                                 fullWidth
+                                color="secondary"
                                 name="password"
                                 label="Password"
                                 type="password"
@@ -177,6 +184,7 @@ function Signup() {
                                 variant="outlined"
                                 required
                                 fullWidth
+                                color="secondary"
                                 name="confirmPassword"
                                 label="Confirm Password"
                                 type="password"
@@ -190,7 +198,7 @@ function Signup() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         onClick={handleSubmit}
                         disabled={loading ||
                             !state.email ||

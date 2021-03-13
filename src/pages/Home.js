@@ -22,14 +22,25 @@ import ListItemText from '@material-ui/core/ListItemText';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import LeftSide from "../components/leftSide";
 import { Link } from "react-router-dom";
-import { Button } from '@material-ui/core';
+import { Button, Container, makeStyles  } from '@material-ui/core';
 import TriggerCard from "../components/trigger/triggerCard"
 import { useTrigger } from "../TriggerContext";
-
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
 import { authChecker } from '../util/auth.js'
 
 
-
+const useStyles = makeStyles((theme) => ({
+    avatar: {
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.secondary.main,
+        alignItems: 'center',
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+    },
+}));
 const initialState = {
     render: false,
     firstName: '',
@@ -40,44 +51,57 @@ const initialState = {
 }
 
 function Home(props) {
-   
+    const classes = useStyles();
 
     // MINE 
     const { state, dispatch } = useTrigger();
     const localCards = JSON.parse(localStorage.getItem("cards") || "[]");
     const [cards, setCards] = useState(localCards);
-    console.log(state.cards)
     useEffect(() => {
-        if(state.cards.length > 0){
+        if (state.cards.length > 0) {
             // setCards(state.cards);
-            console.log(state.cards)
+            
         }
 
-        console.log(cards)
     }, [])
 
+    const deleteCard = (index) => {
+        let newCards = [...cards];
+        let slicedCards = newCards.splice(index,1);
+        localStorage.setItem("cards", JSON.stringify(newCards));
+        setCards(newCards);
+        
+    }
 
+    return (
+        <div className="TriggerPage">
+            <div className="LeftSight">
 
-        return (
-            <div className="TriggerPage">           
-            <div  className="LeftSight">   
-                         
                 <LeftSide />
             </div>
             <div className="FieldTriggers">
-                <div className="FieldCards">
-                    { cards.map(card => <TriggerCard value={card.value} key={card.data} data={card.dateTrigger} users={card.targetUsers} />)}
-                </div>
-                <br />
                 <Link to="/trigger">
-                    <Button id="but-red">
+                    <Button type="submit"
+                            size="large"
+                            className={classes.submit}
+                            variant="contained"
+                            color="secondary">
+                            
                         Add a trigger
                     </Button>
                 </Link>
+                <br />
+                <div className="FieldCards">
+                    <Container component="main" maxWidth="lg">
+                    {cards.map( (card, index) => <div key={index}> <TriggerCard id={index} value={card.value} key={index} data={card.dateTrigger} users={card.targetUsers} /> <IconButton aria-label="delete" onClick={() => deleteCard(index)} ><DeleteIcon fontSize="large" />
+        </IconButton> <Link to="/trigger"><IconButton aria-label="edit" onClick={() => dispatch({ type: 'editCard', payload: {card, index} })} ><EditIcon fontSize="large" />
+        </IconButton></Link></div> )}
+        </Container>
+                </div>
             </div>
         </div>
-        );
-    }
+    );
+}
 
 
 export default Home;

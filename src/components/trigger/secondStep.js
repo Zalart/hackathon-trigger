@@ -36,7 +36,7 @@ function SecondStep() {
         <div className='second__step'>
             <Container component="main" maxWidth="lg">
                 <div>
-                    <DescriptionStep />
+                    <DescriptionStep step={2} />
                 </div>
                 <Grid item xs={12}><TextField label="What information do you want to send?" variant="outlined" margin="normal" required fullWidth color="secondary" value={letter} onChange={(event) => changeLetter(event.target.value)}></TextField></Grid>
                 <Grid container spacing={2}>

@@ -17,9 +17,9 @@ function leftSide({ progress }) {
                 <br></br>
 
 
-                <h1 className={progress == 1 ? "colortext" : "regularStep"}>{progress == 1 ? '1. Who will recieve your message?' : 1}</h1>
-                <h1 className={progress == 2 ? "colortext" : "regularStep"}>{progress == 2 ? '2. What information do you want to send?' : 2}</h1>
-                <h1 className={progress == 3 ? "colortext" : "regularStep"}>{progress == 3 ? '3. When your message will be sent?' : 3}</h1>
+                <h1 className={progress == 1 ? "colortext" : "regularStep"}>{progress == 1 ? '1' : 1}</h1>
+                <h1 className={progress == 2 ? "colortext" : "regularStep"}>{progress == 2 ? '2' : 2}</h1>
+                <h1 className={progress == 3 ? "colortext" : "regularStep"}>{progress == 3 ? '3' : 3}</h1>
                 {/* <button onClick={()=>history.push('/')}> Log out<button> */}
             </div>}
 

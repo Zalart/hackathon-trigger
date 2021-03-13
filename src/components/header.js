@@ -1,23 +1,25 @@
 import React from 'react'
 import '../components/header.css';
 import trigger2 from '../components/assets/trigger2.png';
+import { Link } from "react-router-dom";
 
 function header() {
     return (
         <div className="header">
-            <a className="header-item" href='/'>
+            <Link to="/">
                 <img className='trigger2' src={trigger2} alt='trigger logo' />
-            </a>
+            </Link>
+ 
             <div className="header">
-            <a className="header-item" href='/home'>
-                Home
-            </a>
-            <a className="header-item" href='/trigger'>
-                Triggers
-            </a>
-            <a className="header-item__round" href='/'>
-            {localStorage.getItem('firstName') ? localStorage.getItem("firstName").trim().slice(0,1).toUpperCase() : null}
-            </a>
+                <Link to="/">
+                    <p className="header-item">Home</p>
+                </Link>
+                
+                <Link to="/home">
+                    <p className="header-item__round">
+                        {localStorage.getItem('firstName') ? localStorage.getItem("firstName").trim().slice(0, 1).toUpperCase() : null}
+                    </p>
+                </Link>
             </div>
         </div>
     )

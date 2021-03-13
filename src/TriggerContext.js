@@ -62,8 +62,30 @@ const reducer = (state, action) => {
                     value: action.payload
                 }
             }
+        case "editCard":
+            return {
+                ...state,
+                edit: action.payload.index,
+                form: action.payload.card
+            }
         case "stepThreeCompleted":
             state.form.dateTrigger = action.payload
+            if(state.edit || state.edit === 0){
+                console.log(state.edit)
+                console.log(state.cards[state.edit])
+                state.cards[state.edit] = state.form;
+                localStorage.setItem("cards", JSON.stringify(state.cards));
+                return {
+                    ...state,
+                    progress: 1,
+                    form: {
+                        data: new Date(),
+                        value: '',
+                        targetUsers: [],
+                        dateTrigger: ""
+                    }
+                }
+            }
             state.cards.push(state.form);
             localStorage.setItem("cards", JSON.stringify(state.cards));
             return {

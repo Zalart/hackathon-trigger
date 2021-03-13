@@ -21,10 +21,10 @@ function ThirdStep() {
     const classes = useStyles();
     const { state, dispatch } = useTrigger();
     const [dateTrigger, setDateTrigger] = useState("");
-    console.log(state.form.data)
+    
 
     const ChangeDate = (value) => {
-        const date = new Date(value).toLocaleDateString('ru-Ru');
+               const date = new Date(value).toLocaleString('en-GB', { timeZone: 'UTC' });
         setDateTrigger(date)
     }
 
@@ -38,7 +38,7 @@ function ThirdStep() {
         <div>
             <Container component="main" maxWidth="lg">
                 <div>
-                    <DescriptionStep />
+                    <DescriptionStep step={3} />
                 </div>
                 <h1>Date: {dateTrigger && dateTrigger}</h1>
                 <Grid item xs={12}>
@@ -48,6 +48,7 @@ function ThirdStep() {
                             id="datetime-local"
                             label="Trigger Time"
                             type="datetime-local"
+                            name="date"
                             onChange={(event) => ChangeDate(event.target.value)}
                             defaultValue="2021-03-15T19:30"
                             className={classes.textField}
@@ -69,15 +70,16 @@ function ThirdStep() {
 
 
                     <Grid item xs={12} sm={6}>
-                        <Link to="/home">
+                        <Link to="/home" >
                             <Button size="large"
                                 fullWidth
                                 variant="contained"
                                 color="secondary"
                                 className={classes.submit}
+                                
                                 onClick={() => dispatch({ type: 'stepThreeCompleted', payload: dateTrigger })}>
                                 Complete
-                                    </Button>
+                                </Button>
                         </Link>
                     </Grid>
                 </Grid>

@@ -34,7 +34,6 @@ function FirstStep() {
             setUsers(state.form.targetUsers);
         }
 
-        console.log(users)
     }, [])
 
 
@@ -58,11 +57,11 @@ function FirstStep() {
         <div className='first__step'>
             <Container component="main" maxWidth="lg">
                 <div>
-                    <DescriptionStep />
+                    <DescriptionStep step={1} />
                 </div>
 
                 {users.map((item) => {
-                    return <Grid item xs={12}><TextField key={item.id} name="addressee" label="Who will recieve your message?" variant="outlined" margin="normal" required fullWidth color="secondary" value={item.value} onChange={(event) => changesInput({ value: event.target.value, idx: item.id })} /></Grid>
+                    return <Grid key={item.id} item xs={12}><TextField key={item.id} name="addressee" label="Who will recieve your message?" variant="outlined" margin="normal" required fullWidth color="secondary" value={item.value} onChange={(event) => changesInput({ value: event.target.value, idx: item.id })} /></Grid>
                 })}
                 <Grid item xs={12} container justify="flex-end">
                     <Button
