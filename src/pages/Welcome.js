@@ -9,13 +9,17 @@ function Welcome() {
     return (
         <div className="welcome_page">
             <div className="welcome_pic"> 
-                <div className="logo">
+                {/* <div className="logo">
                     <img src={trigger} alt={"logo"}/>      
-                </div> 
+                </div>  */}
                        
                 <p>
                    <br></br>
-                    Some things should
+                   <span className="colortext">
+                   Some 
+                    </span>
+
+                    things should
                     </p>
                 <p>
                     be definetely
@@ -57,14 +61,17 @@ function Welcome() {
                 <p>
                     simple and powerful. Everything you need to start is available free on this website
                 </p>
-                <p>
+                {/* <p>
                     <span className="colortext"> Sometimes </span>
                      we need someone to act in our favor...
-                </p>
-
-                <h3>You can ask your friend, relative, or collegue.</h3>
+                </p> */}
+                
                  <p> 
-                     What happens if they forget to do something really important? You never know... We’ll make sure that something will be done on time trigger, event or periodically
+                 You can ask your friend, relative, or collegue.
+                 What happens if they forget to do something really important? You never know...
+                  We will make sure your message arrives 
+                  <span className="colortext"> ON TIME </span>
+                  
                 </p>
                 <div className="welcome_text">
                 </div>   
@@ -73,7 +80,7 @@ function Welcome() {
                     <span class="colortext">
                         "TRIGGER" 
                     </span>
-                    will send whatever you need ... whoever you want ... when you need ...
+                    will send <b>any message .</b>.. to <b>any person</b> you choose ... <b>any moment of time</b> you need it - in a day , in  a week  or in a month
                 </p>
                                                 
             </div>      

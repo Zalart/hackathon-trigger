@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/header.css';
-import trigger2 from '../components/assets/trigger2.png';
+import trigger2 from '../components/assets/logo-trigger.png';
 
 function header() {
     return (
