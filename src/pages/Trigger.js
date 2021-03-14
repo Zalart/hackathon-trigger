@@ -18,6 +18,7 @@ function Trigger() {
                 <LeftSide progress={state.progress} />
             </div>
             <div className="FieldTriggers">
+                
                 {state.progress == 1 ? <FirstStep/> : state.progress == 2 ? <SecondStep/> : state.progress == 3 ? <ThirdStep /> : <FirstStep/> }
             </div>
         </div>

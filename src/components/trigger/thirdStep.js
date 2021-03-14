@@ -40,7 +40,7 @@ function ThirdStep() {
                 <div>
                     <DescriptionStep step={3} />
                 </div>
-                <h1>Date: {dateTrigger && dateTrigger}</h1>
+                <h4>Date: {dateTrigger && dateTrigger}</h4>
                 <Grid item xs={12}>
                     <form className={classes.container} noValidate>
                         <TextField

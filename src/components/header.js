@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/header.css';
-import trigger2 from '../components/assets/trigger2.png';
+import trigger2 from '../components/assets/logo-trigger.png';
 import { Link } from "react-router-dom";
 
 function header() {

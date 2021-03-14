@@ -9,26 +9,30 @@ function Welcome() {
     return (
         <div className="welcome_page">
             <div className="welcome_pic"> 
-                <div className="logo">
-                    <img src={trigger} alt={"logo"}/>      
-                </div> 
-                       
-                <p>
-                   <br></br>
-                    Some things should
+               
+                    <h1> 
+                        One Letter
+                    </h1>                
+                        
+                    <h3>
+                        <span className="colortext">can change your life</span></h3>
+                    <p>
+                        so some
+                        <span className="colortext">
+                            things 
+                        </span>
+
+                         should
                     </p>
-                <p>
-                    be definetely
+                    <p>
+                        be definetely
                             <span className="colortext">
-                        DONE
+                                DONE
                             </span>
-                </p>
+                    </p>
+              
                 <div className="welcome_but">
 
-                    {/* 
-                    <Button  variant="contained" color="secondary">
-                        <Link to="/registration">Registration</Link>
-                    </Button> */}
                     <div>
                     <Button id="but-red"  >
                         <Link to="/signup">Sign up</Link>
@@ -38,52 +42,63 @@ function Welcome() {
                     <Button id="but-white">
                         <Link to="/login">Log in</Link>
                     </Button>
-                    </div>
-
-                 
+                    </div>                 
                 </div>
 
             </div>
-
             <div className="welcome_text">
+                              
                 <p>
-                    
-                    <span class="colortext">
+                <span class="colortext">
                         A Simple Act ...
-                    </span>
+                    </span> 
+                    <br></br>
+                    easy and powerful. Everything you need to start is available free on this website
                 </p>
-                <h3>that will change your life</h3>
+                               
+               
+                <div className="line_red">                   
+                    <br></br>
+                </div>
 
-                <p>
-                    simple and powerful. Everything you need to start is available free on this website
-                </p>
-                <p>
-                    <span className="colortext"> Sometimes </span>
-                     we need someone to act in our favor...
-                </p>
-
-                <h3>You can ask your friend, relative, or collegue.</h3>
                  <p> 
-                     What happens if they forget to do something really important? You never know... We’ll make sure that something will be done on time trigger, event or periodically
+                 You can ask your friend, relative or collegue.
+                 What happens if they forget to do something really important? You never know...
+                  We will make sure your  <span className="colortext">message </span> arrives 
+                  <span className="colortext"> on time... </span>
+                  
                 </p>
-                <div className="welcome_text">
-                </div>   
+                 
+                <div className="line_red">
+                   
+                   <br></br>
+               </div>
+               
                 <p> 
-                    Our app will help you! the 
+                    Project
                     <span class="colortext">
                         "TRIGGER" 
-                    </span>
-                    will send whatever you need ... whoever you want ... when you need ...
+                    </span> will help you!  Our app 
+                    will send any message ... to any person you choose ...any moment of time you need it ... even  in a day, in  a week  or in a month
                 </p>
+                <div className="line_red">
+                   
+                   <br></br>
+               </div>
+                     
+                <p>
+                    <span class="colortext">
+                        All you need...  
+                   </span>
+                   <br></br>
+                    is to go to our website, log into your account, 
+                    create a new "trigger" so that we know WHAT message, TO WHOM and WHEN we should to send.. 
+                    And we will do it for you, even if you are offline and unable to   
+                </p>              
                                                 
-            </div>      
-
-
-
-
+            </div> 
         </div>
-
-                                
+                               
     );
 }
                 

@@ -1,22 +1,38 @@
 
 .welcome_pic {
-  background-image: url(https://c.pxhere.com/photos/6b/f0/grey_antique_letter_texture_grunge_typography_vintage_background_abstract-976206.jpg!d) ;
+  background-image:linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, .5)), 
+  /* url(https://c.pxhere.com/photos/6b/f0/grey_antique_letter_texture_grunge_typography_vintage_background_abstract-976206.jpg!d) ; */
   
-   /* 'https://www.tv21.ru/sites/default/files/styles/750x422/public/news/2021/01/06/abstract-5719221_1920.jpg?h=8abcec71&itok=nnSbXRDU' */
-  height: 400px; 
+  url('https://tuparent.fi/wp-content/uploads/2020/12/abstract-dust-background-5719221.jpg');
+  /* height: 400px;  */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: 100%; 
+  background-size: cover; 
+  
  
-}
-.welcome_pic p{
-  padding: 10pt;
-  text-align: center;
-  font: 36pt robota; 
-  font-weight: 600; 
 
 }
+.welcome_pic  p{
+  
+  text-align: center;
+  font: 32pt Poppins; 
+  font-weight: 500; 
+  color:#ffffff;
+  letter-spacing: 10px;  
+}
+.welcome_pic {
+  padding: 10pt;
+  text-align: center;
+  font: 48pt Poppins; 
+  font-weight: 500; 
+  color:#ffffff;
+  letter-spacing: 10px;  
+}
+
+
+
+
 .logo {
   text-align: center;
  
@@ -43,13 +59,24 @@
 }
 
 .welcome_text {
+  min-height: 150pt;
   max-width: 1200px;
   margin-left: 20%;
   margin-right: 20%;
   font: 18pt robota;  
   font-weight: 400;
   border-bottom: #e90536; 
+  margin-top: 5%;
+  margin-bottom:  10%;
+
+}
+
+.line_red { 
   
+  border-bottom: 3px solid  #e90536; /* Параметры границы */
+    width: 20%;
+    margin-bottom: 2%; 
+   
 }
 
 .welcome_text p{
@@ -204,22 +231,35 @@
 
 
 @media (max-width: 768px) {    
-  .welcome_pic p{
+  .welcome_pic {
    
-    font: 32pt robota; 
-   
+    font: 26pt robota; 
+    
+  }
   
-  } 
+  .welcome_pic p{
+    font: 26pt robota; 
+ 
+  }  
 }
+
+
+
 @media (max-width: 480px) {    
+  .welcome_pic {
+       font: 22pt robota; 
+    
+  }
   .welcome_pic p{
-   
-    font: 24pt robota; 
-   
-  
-  } 
+       font: 22pt robota; 
+    
+  }  
 }
 
 
+
+.welcome_pic {
+  min-height: calc(100vh - 50px);
+}
 
 

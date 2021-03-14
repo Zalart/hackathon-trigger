@@ -1,10 +1,11 @@
 import React from 'react';
 import '../components/footer.css';
+import wcs from '../components/assets/WCS.png';
 
 function footer() {
     return (
         <div className='footer'>
-            <img className='footer__wcs-logo' src="https://s3-alpha-sig.figma.com/img/34aa/e319/9485bda644e4913376c8e118e3a1723f?Expires=1616371200&Signature=SAENyoOj~xqgrEcx-gOT5-IT0vgptjO9euv3AL3yXAzcrNtBdrOM60c4axgajQwfcNSvhv9p4XomFhHcPggA2PJoYe7EQoG1E3Yr7plCDbzL4rLwMIM4Yval9Bnq-JJICAohPQJi7EVuhlIOqX4~VrC9~2M8igKf-xLuJ2j5JviA33D9U2CRIftrzF7C3bdK3RTsakOfmf7qvOh67QjnKImUlHeVy8OgKHihoqrcQgNIPycJkYMxbFCf~5D1PADsy8VDbso7WLZL1jLIq2wNhNhbyZd-UbtT45DuY~zoH5~WMoR34f8g8t~Jxqrf4l8Hy2ryb8nJL~ULqpcSm4FeDA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt='wild code school logo' />
+            <img className='footer__wcs-logo' src={wcs} alt='wild code school logo' />
 
             <div className='footer__info'>
                 <p>Made for</p>

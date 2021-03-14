@@ -80,6 +80,7 @@ function Home(props) {
                 <LeftSide />
             </div>
             <div className="FieldTriggers">
+                <h3>My Trigger's List</h3>
                 <Link to="/trigger">
                     <Button type="submit"
                             size="large"
@@ -87,7 +88,7 @@ function Home(props) {
                             variant="contained"
                             color="secondary">
                             
-                        Add a trigger
+                        ADD NEW TRIGGER
                     </Button>
                 </Link>
                 <br />
